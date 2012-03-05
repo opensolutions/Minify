@@ -21,6 +21,8 @@ A full destription of the available options is commented within `minify-options.
 * [ViMbAdmin](https://github.com/opensolutions/vimbadmin/wiki) - Virtual Mailbox Administration
 
 
+Do you use Minify? Do you want to get listed here? Drop us a note to `info _at_ opensolutions _dot_ it` or open a pull request.
+
 ## License and Copyright
 
 Copyright (c) 2010 - 2012, [Open Source Solutions Limited](http://www.opensolutions.ie/), Dublin, Ireland
