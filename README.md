@@ -22,6 +22,14 @@ A full destription of the available options is commented within `minify-options.
     ./minify.php --help
 
 
+## Example Usage
+
+[IXP Manager](https://github.com/inex/IXP-Manager) uses Minify. You can see IXP Manager's [JS files here](https://github.com/inex/IXP-Manager/tree/develop/public/js) and its [CSS files here](https://github.com/inex/IXP-Manager/tree/develop/public/css). 
+
+The Minify script bundles the individual files into `min.bundle-vX.css` and `min.bundle-vX.js` files and also creates templates with logic for using the original uncompressed files or the compressed bundles in [this file for CSS](https://github.com/inex/IXP-Manager/blob/develop/application/views/header-css.tpl) and [this file for JS](https://github.com/inex/IXP-Manager/blob/develop/application/views/header-js.tpl).
+
+The configuration for generating these [is here](https://github.com/inex/IXP-Manager/blob/develop/bin/minify-options.php).
+
 ## Used By
 
 * [ePayroll](http://www.epayroll.ie/) - Online payroll processing and management.
