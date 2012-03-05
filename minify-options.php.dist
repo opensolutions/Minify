@@ -71,8 +71,13 @@ $http_js = '{genUrl}/js';
 // means use the individual uncompressed files. I.e. production vs development. The
 // script then spits out a Smarty (in this case) template file we can include which
 // is aware of the var and uses the individual files or the bundle as appropriate.
-//
-// For this, we need the components of an if/else clause. I.e.
+// Set the following to false to not use this functionality and maintain it yourself
+
+// $js_header_file = false;
+$js_header_file = APPLICATION_PATH . '/views/header-js.tpl';
+
+// If you are using the $js_header_file functionality, we need the components of
+// an if/else clause. I.e.
 //
 // if( use bundle )
 //    <include bundle file>
@@ -88,12 +93,6 @@ $mini_js_conditional_if   = '{if isset( $config.use_minified_js ) and $config.us
 $mini_js_conditional_else = '{else}';
 $mini_js_conditional_end  = '{/if}';
 
-//
-// set the following to false to not use this functionality and maintain it yourself
-
-// $js_header_file = false;
-
-$js_header_file = APPLICATION_PATH . '/views/header-js.tpl';
 
 // We create a minified version of each JS file found. These can safely be deleted:
 $del_mini_js = true;
@@ -128,18 +127,18 @@ $css_dest = APPLICATION_PATH . '/../public/css';
 // automatically. You can just as easily put '/myapp/js/' here for example
 $http_css = '{genUrl}/css';
 
+
+// set the following to false to not use the templating functionality (see JS above for more info)
+// $css_header_file = false;
+
+$css_header_file = APPLICATION_PATH . '/views/header-css.tpl';
+
 // See $mini_js_conditional_ above for an explanation
 
 $mini_css_conditional_if   = '{if isset( $config.use_minified_css ) and $config.use_minified_css}';
 $mini_css_conditional_else = '{else}';
 $mini_css_conditional_end  = '{/if}';
 
-//
-// set the following to false to not use this functionality and maintain it yourself
-
-// $css_header_file = false;
-
-$css_header_file = APPLICATION_PATH . '/views/header-css.tpl';
 
 // We create a minified version of each CSS file found. These can safely be deleted:
 $del_mini_css = true;
