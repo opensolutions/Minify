@@ -19,7 +19,7 @@ A full destription of the available options is commented within `minify-options.
 
 The Minify script bundles the individual files into `min.bundle-vX.css` and `min.bundle-vX.js` files and also creates templates with logic for using the original uncompressed files or the compressed bundles in [this file for CSS](https://github.com/inex/IXP-Manager/blob/develop/application/views/header-css.tpl) and [this file for JS](https://github.com/inex/IXP-Manager/blob/develop/application/views/header-js.tpl).
 
-The configuration for generated these [is here](https://github.com/inex/IXP-Manager/blob/develop/bin/minify-options.php).
+The configuration for generating these [is here](https://github.com/inex/IXP-Manager/blob/develop/bin/minify-options.php).
 
 ## Used By
 
