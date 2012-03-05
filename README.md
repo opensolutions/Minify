@@ -9,7 +9,7 @@ Its main features are:
 * automatically generate template include files allowing production / development mode (i.e. use individual CSS/JS or bundles based on an application option);
 * versioning for those using CDNs, future expiry dates, etc to ensure clients load fresh JS/CSS bundles.
 
-See the
+See the **Example Usage** section below.
 
 ## Usage
 
