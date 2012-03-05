@@ -137,7 +137,7 @@ if( in_array( $whatToCompress, array( 'all', 'js' ) ) )
     if( $version )
         file_put_contents( "{$js_dest}/min.bundle-v{$version}.js", $mergedJs );
     else
-        file_put_contents( "{$js_dest}/js/min.bundle.js", $mergedJs );
+        file_put_contents( "{$js_dest}/min.bundle.js", $mergedJs );
 
     if( $js_header_file )
     {

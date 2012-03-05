@@ -13,6 +13,14 @@ A full destription of the available options is commented within `minify-options.
     ./minify.php --help
 
 
+## Used By
+
+* [ePayroll](http://www.epayroll.ie/) - Online payroll processing and management.
+* [IXP Manager](https://github.com/inex/IXP-Manager) - A web application to assist in the management of Internet Exchange Points (IXPs)
+* [TallyStick](http://www.tallystick.net/) - Focus on what you love to do, while we take care of tracking your time.
+* [ViMbAdmin](https://github.com/opensolutions/vimbadmin/wiki) - Virtual Mailbox Administration
+
+
 ## License and Copyright
 
 Copyright (c) 2010 - 2012, [Open Source Solutions Limited](http://www.opensolutions.ie/), Dublin, Ireland
