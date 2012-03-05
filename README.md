@@ -1,6 +1,15 @@
 # Minify
 
-Minify is a JS and CSS minifier (with additional benefits for projects using the Smarty PHP templating engine).
+Minify is a JS and CSS minifier toolkit (with support for generating templates for engines such as Smarty).
+
+Its main features are:
+
+* automatically find all CSS/JS files in a given directory named `xxx-blah.css` where `xxx` is a three digit ordering / sequence number;
+* minify these files and create a single file bundle;
+* automatically generate template include files allowing production / development mode (i.e. use individual CSS/JS or bundles based on an application option);
+* versioning for those using CDNs, future expiry dates, etc to ensure clients load fresh JS/CSS bundles.
+
+See the
 
 ## Usage
 
