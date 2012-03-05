@@ -30,6 +30,7 @@
 
 
 define( 'VERSION', '1.0' );
+define( 'SCRIPTDIR', dirname( __FILE__ ) );
 
 // if your project is using JS/CSS caching, furture expire dates, CDNs, etc then you
 // should version your bundles to ensure new releases are used immediately
