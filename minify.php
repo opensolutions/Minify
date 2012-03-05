@@ -142,12 +142,12 @@ if( in_array( $whatToCompress, array( 'all', 'js' ) ) )
 
     if( $js_header_file )
     {
-        $jshdrt = "{if {$mini_js_var}}\n    <script type=\"text/javascript\" src=\"{$http_js}/min.bundle";
+        $jshdrt = "{$mini_js_conditional_if}\n    <script type=\"text/javascript\" src=\"{$http_js}/min.bundle";
 
         if( $version )
             $jshdrt .= "-v{$version}";
 
-        $jshdrt .= ".js\"></script>\n{else}\n{$jshdr}{/if}\n";
+        $jshdrt .= ".js\"></script>\n{$mini_js_conditional_else}\n{$jshdr}{$mini_js_conditional_end}\n";
 
         file_put_contents( $js_header_file, $jshdrt );
     }
@@ -204,12 +204,12 @@ if( in_array( $whatToCompress, array( 'all', 'css' ) ) )
 
     if( $css_header_file )
     {
-        $csshdrt = "{if {$mini_css_var}}\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"{$http_css}/min.bundle";
+        $csshdrt = "{$mini_css_conditional_if}\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"{$http_css}/min.bundle";
 
         if( $version )
             $csshdrt .= "-v{$version}";
 
-        $csshdrt .= ".css\" />\n{else}\n{$csshdr}{/if}\n";
+        $csshdrt .= ".css\" />\n{$mini_css_conditional_else}\n{$csshdr}{$mini_css_conditional_end}\n";
 
         file_put_contents( $css_header_file, $csshdrt );
     }
