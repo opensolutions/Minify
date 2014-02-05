@@ -1,0 +1,15 @@
+{
+    "name": "opensolutions/minify",
+    "description": "A JS and CSS minifier tool (with additional benefits for projects using template engines such as Smarty)",
+    "keywords": [ "minify", "minifier" ],
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Barry O'Donovan",
+            "email": "barry@opensolutions.ie"
+        }
+    ],
+    "require": {
+    },
+    "bin": [ "minify.php" ]
+}
