@@ -21,6 +21,12 @@ A full destription of the available options is commented within `minify-options.
 
     ./minify.php --help
 
+## Installation Options
+
+* It's a simple script - you can just clone the directory;
+* **Composer:** require `"opensolutions/minify": "dev-master"` 
+* **Packagist:** https://packagist.org/packages/opensolutions/minify
+
 
 ## Example Usage
 
