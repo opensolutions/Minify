@@ -42,7 +42,7 @@ Do you use Minify? Do you want to get listed here? Drop us a note to `info _at_ 
 
 ## License and Copyright
 
-Copyright (c) 2010 - 2012, [Open Source Solutions Limited](http://www.opensolutions.ie/), Dublin, Ireland
+Copyright (c) 2010 - 2014, [Open Source Solutions Limited](http://www.opensolutions.ie/), Dublin, Ireland
 
 Released under the BSD license:
 
